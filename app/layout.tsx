@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ProgressBar, ProgressBarLink } from "./progress-bar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,18 +19,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-gray-800 text-gray-200 antialiased`}
       >
-        <ProgressBar className="fixed h-1 shadow-lg shadow-sky-500/20 bg-sky-500 top-0">
-          <header className="border-b border-gray-700">
-            <nav className="m-4 flex gap-4">
-              <ProgressBarLink href="/">Home</ProgressBarLink>
-              <ProgressBarLink href="/posts/1">Post 1</ProgressBarLink>
-              <ProgressBarLink href="/posts/2">Post 2</ProgressBarLink>
-              <ProgressBarLink href="/posts/3">Post 3</ProgressBarLink>
-            </nav>
-          </header>
-
-          <div className="m-4">{children}</div>
-        </ProgressBar>
+        {children}
       </body>
     </html>
   );
