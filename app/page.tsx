@@ -10,7 +10,7 @@ export default function Page() {
     <div className="min-h-screen flex flex-col px-8 gap-8 justify-center items-center">
       <div className="max-w-3xl grid grid-cols-3 w-full gap-8">
         <div className="flex items-center">
-          <svg viewBox="0 0 120 120" className="-rotate-90 p-10">
+          <svg viewBox="0 0 120 120" className="-rotate-90">
             <circle
               cx="60"
               cy="60"
